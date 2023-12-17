@@ -16,7 +16,7 @@
 // console.log(Math.ceil(Math.random() * 100));
 
 // 8
-// console.log(Math.floor(Math.random() * 101) + 50);
+// console.log(Math.floor(Math.random() * 50) + 50);
 
 // 9
 // console.log(Math.ceil(Math.random() * 255 ));

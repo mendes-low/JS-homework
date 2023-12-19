@@ -107,7 +107,7 @@
 //     console.log('Оно равно');
 // }
 // else {
-//     console.log('Оно не равно, сейчас сделаем');
+//     console.log('Оно не равно 10, сейчас сделаем');
 //     let numFloat = Math.ceil(num)
 //     if (numFloat == 10) {
 //         console.log(`Сделано, вот:${numFloat}`);
@@ -198,3 +198,5 @@
 // console.log(`annual bonus:${annualBonus}`);
 // console.log(`online courses per month:${onlineCourses}`);
 // console.log(annual_income);
+
+

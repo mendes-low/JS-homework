@@ -116,17 +116,17 @@
 // `)  
 
 // 5
-// let x = prompt('Enter x:')
-// let y = 2*x -2
-// alert(`Slope: ${y}`)
+let x = prompt('Enter x:')
+let y = 2*x -2
+alert(`Slope: ${y}`)
 
 // 6
-// let x1 = 2
-// let x2 = 6
-// let y1 = 2
-// let y2 = 10
-// let m = (y2-y1)/(x2-x1)
-// alert(m)
+let x1 = 2
+let x2 = 6
+let y1 = 2
+let y2 = 10
+let m = (y2-y1)/(x2-x1)
+alert(m)
 
 
 

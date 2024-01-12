@@ -124,18 +124,18 @@
 // console.log('Sum odd numbers:' + sumOdd);
 
 // 12
-// let sumOdd = 0
-// let sumEven = 0
-// let arrNumbers = []
-// for (let i = 0; i <= 100; i++) {
-//     if (i % 2 === 1) {
-//         sumOdd += i
-//     } else {
-//         sumEven += i
-//     }
-// }
-// arrNumbers.push(sumEven, sumOdd)
-// console.log(arrNumbers)
+let sumOdd = 0
+let sumEven = 0
+let arrNumbers = []
+for (let i = 0; i <= 100; i++) {
+    if (i % 2 === 1) {
+        sumOdd += i
+    } else {
+        sumEven += i
+    }
+}
+arrNumbers.push(sumEven, sumOdd)
+console.log(arrNumbers)
 
 // 13
 // let randomNum
@@ -213,7 +213,6 @@
 // }
 // console.log(`rgb(${randomRGB},${randomRGB2},${randomRGB3})`);
 
-
 // for (let i = 0; i < 1; i++) {
 //     let randomRGB1 = Math.ceil(Math.random() * 255);
 //     let randomRGB2 = Math.ceil(Math.random() * 255);
@@ -222,19 +221,19 @@
 // }
 
 // 4
-// let countries = [
-//         'Albania',
-//         'Bolivia',
-//         'Canada',
-//         'Denmark',
-//         'Ethiopia',
-//         'Finland',
-//         'Germany',
-//         'Hungary',
-//         'Ireland',
-//         'Japan',
-//         'Kenya'
-//     ]
+let countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+]
 // let countriesUpper = []
 // for (let i = 0; i < countries.length; i++) {
 //     countriesUpper[i] = countries[i].toUpperCase();
@@ -242,38 +241,12 @@
 // console.log(countriesUpper);
 
 // 5
-// let countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Japan',
-//     'Kenya'
-// ]
 // for (let i = 0; i < countries.length; i++) {
 //     countries[i] = countries[i].length
 // }
 // console.log(countries);
 
 // 6
-// let countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Japan',
-//     'Kenya'
-// ]
 // let arrArrays = []
 // for (let i = 0; i < countries.length; i++) {
 //     let countriesName = countries[i]
@@ -284,20 +257,6 @@
 // console.log(arrArrays);
 
 // 7
-// let countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Iceland',
-//     'Japan',
-//     'Kenya'
-// ]
 // let arrLand = []
 // for (let i of countries) {
 //     if (i.includes('land') == true) {
@@ -309,20 +268,6 @@
 // console.log(arrLand);
 
 // 8
-// let countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Iceland',
-//     'Japan',
-//     'Kenya'
-// ]
 // let arrIa = []
 // for (let i of countries) {
 //     if (i.includes('ia') == true) {
@@ -334,20 +279,6 @@
 // console.log(arrIa);
 
 // 9
-// let countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Iceland',
-//     'Japan',
-//     'Kenya'
-// ]
 // let arrIa = []
 // for (let i of countries) {
 //     if (i.includes('ia') == true) {
@@ -369,20 +300,6 @@
 // console.log(mainCountry);
 
 // 10
-// let countries = [
-//     'Albania',
-//     'Bolivia',
-//     'Canada',
-//     'Denmark',
-//     'Ethiopia',
-//     'Finland',
-//     'Germany',
-//     'Hungary',
-//     'Ireland',
-//     'Iceland',
-//     'Japan',
-//     'Kenya'
-// ]
 // let arrFiveLength = []
 // for (let i = 0; i < countries.length; i++) {
 //     if (countries[i].length == 5) {
@@ -392,21 +309,82 @@
 // console.log(arrFiveLength);
 
 // 11
-const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB'
-]
+// const webTechs = [
+//     'HTML',
+//     'CSS',
+//     'JavaScript',
+//     'React',
+//     'Redux',
+//     'Node',
+//     'MongoDB'
+// ]
+// let zerolen = 0
+// let webString = ''
+// for (let i = 0; i < webTechs.length; i++) {
+//     let webTech = webTechs[i]
+//     let webTechLen = webTech.length
+//     if (webTechLen > zerolen) {
+//         zerolen = webTechLen
+//         webString = webTech
+//     }
+// }
+// console.log(webString);
 
-for (let i = 0; i < webTechs.length; i++) {
-    
-}
+// 12
+// const webTechs = [
+//     'HTML',
+//     'CSS',
+//     'JavaScript',
+//     'React',
+//     'Redux',
+//     'Node',
+//     'MongoDB'
+// ]
+// let arrArrays = []
+// for (let i = 0; i < webTechs.length; i++) {
+//     let webTechsLen = webTechs[i].length
+//     arrArrays.push([webTechs[i],webTechsLen])
+// }
+// console.log(arrArrays);
 
+// 13
+// const mernStack = ['MongoDB', 'Express', 'React', 'Node']
+// let stack
+// let mern = []
+// for (let mer of mernStack) {
+//     mern.push(mer[0])
+// }
+// console.log(mern.join(''));
 
+// 14
+// let languages = ["HTML", "CSS", "JS", "React", "Redux", "Node", "Express", "MongoDB"]
+// for (let i = 0; i < languages.length; i++) {
+//     console.log(languages[i]);
+// }
+
+// 15
+// let fruits = ['banana', 'orange', 'mango', 'lemon']
+// for (let i = fruits.length - 1; i >= 0; i--) {
+//     console.log(fruits[i]);
+// }
+
+// 16
+// const fullStack = [
+//     ['HTML', 'CSS', 'JS', 'React'],
+//     ['Node', 'Express', 'MongoDB']
+// ]
+// for (let stack of fullStack) {
+//     for (let j = 0; j < stack.length; j++) {
+//         console.log(stack[j].toUpperCase());
+//     }
+// }
+
+// Level 3
+// 1
+// let countriesCopy = countries.slice();
+// console.log(countriesCopy);
+
+// 2
 
 
 

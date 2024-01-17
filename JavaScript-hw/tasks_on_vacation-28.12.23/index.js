@@ -277,11 +277,36 @@
 
 // console.log(`Number x: ${x}`);
 
-// 2.27 / 27
 
-
-
-
+const countries = [
+    'Albania',
+    'Bolivia',
+    'Canada',
+    'Denmark',
+    'Ethiopia',
+    'Finland',
+    'Germany',
+    'Hungary',
+    'Ireland',
+    'Japan',
+    'Kenya'
+]
+iaArr = []
+for (let c of countries) {
+    if (c.includes('ia')) {
+        iaArr.push(c);
+    }
+}
+let word = ''
+let maxLen = 0
+console.log(iaArr);
+for (let a of iaArr) {
+    if (a.length > maxLen) {
+        maxLen = a.length
+        word = a
+    }
+}
+console.log(word);
 
 
 

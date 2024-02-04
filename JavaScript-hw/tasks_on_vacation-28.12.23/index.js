@@ -278,94 +278,240 @@
 // console.log(`Number x: ${x}`);
 
 
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-]
-iaArr = []
-for (let c of countries) {
-    if (c.includes('ia')) {
-        iaArr.push(c);
+// const countries = [
+//     'Albania',
+//     'Bolivia',
+//     'Canada',
+//     'Denmark',
+//     'Ethiopia',
+//     'Finland',
+//     'Germany',
+//     'Hungary',
+//     'Ireland',
+//     'Japan',
+//     'Kenya'
+// ]
+// iaArr = []
+// for (let c of countries) {
+//     if (c.includes('ia')) {
+//         iaArr.push(c);
+//     }
+// }
+// let word = ''
+// let maxLen = 0
+// console.log(iaArr);
+// for (let a of iaArr) {
+//     if (a.length > maxLen) {
+//         maxLen = a.length
+//         word = a
+//     }
+// }
+// console.log(word);
+
+
+
+
+
+
+
+
+
+// Test-function
+// 1
+// function tripleSum(num1, num2) {
+//     return (num1 + num2) * 3 
+// }
+// console.log(tripleSum(5,5));
+
+// 2
+// function fullName(firstName, lastName) {
+//     return `Hello, ${lastName} ${firstName}.`
+// }
+// console.log(fullName('Aziz', 'Uskembaev'));
+
+// 3
+// const sumArray = (arr) => {
+//     let sumEven = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] % 2 == 0) {
+//             sumEven += arr[i];
+//         }
+//     }
+//     return sumEven;
+// }
+// let numbers = [1, 2, 3, 4]
+// console.log(sumArray(numbers));
+
+// 4
+// const arrayStartN = function(array) {
+//     let arrayN = []
+//     for (let i = 0; i < array.length; i++) {
+//         if (array[i][0] == 'H') {
+//             arrayN.push(array[i])
+//         }
+//     }
+//     return arrayN
+// }
+// let str = ['Hero', 'Gerscvcv', 'Heros', 'Frevacew', 'Hergnr']
+// console.log(arrayStartN(str));
+
+// 5
+// let trueOrFalse = function(arrBoolean) {
+//     for (let i = 0; i < arrBoolean.length; i++) {
+//         if (arrBoolean[i] == true) {
+//             arrBoolean[i] = 1
+//         } else if (arrBoolean[i] == false) {
+//             arrBoolean[i] = 0
+//         } else {
+//             'Enter boolean data type'
+//         }
+//     }
+//     return arrBoolean
+// }
+// let typeBoo = [true, false,false,true,true,false]
+// console.log(trueOrFalse(typeBoo));
+
+// 6
+// const nameAndCountry = (firstName, country) => {
+//     if (country ==  undefined) {
+//         country = 'Kazakhstan'
+//     }
+//     return `Hello! I'm ${firstName} and i live in ${country}.`
+// }
+// console.log(nameAndCountry('Aziz', 'Astana'));
+
+// 7
+// function joinStringSpace(...args) {
+//     return args.join(' ');
+// }
+// console.log(joinStringSpace("Hello", "world", "how", "are", "you"));
+
+
+// Test Functions
+
+// 1
+// const info = function(firstName, lastName, birthYear) {
+//     let age = 2024 - birthYear
+//     return `Hello, I'm ${firstName} ${lastName} and ${age} years old.`;
+// }
+// console.log(info('Aziz', 'Uskembaev', 2007))
+
+// 2
+// function sumFourModule(nums) {
+//     let sum = 0
+//     for (let num of nums) {
+//         if (num % 4 == 0) {
+//             sum += num
+//         }
+//     }
+//     return sum;
+// }
+// let number = [2, 3, 4, 5, 6, 8, 9, 12]
+// console.log(sumFourModule(number))
+
+// 3
+// const fahrenheitOrCelsius = function(degree, measurement = 'Celsius') {
+//     if (measurement == undefined) {
+//         measurement = 'Celsius'
+//     }
+//     return `It is ${degree} degrees hot in ${measurement}`
+// }
+// console.log(fahrenheitOrCelsius(23))
+
+// 4
+// function numbers(...nums) {
+//     let num = nums.join('#') + '?'
+//     return num
+// }
+// console.log(numbers(1,2,3,4,5))
+
+
+
+// Test of all
+
+// 1
+function sum(num1, num2) {
+    sum = 0
+    for (let i = num1; i <= num2; i++) {
+        sum += i
+    }
+    return sum
+}
+console.log(sum(5, 6));
+
+2
+function onlyLands(...args) {
+    let arrLands = [];
+    for (let i of args) {
+        if (i.endsWith('land')) {
+            arrLands.push(i);
+        }
+    }
+    return arrLands;
+}
+console.log(onlyLands("Island", "Italy", "Kazakhstan", "England", 'USA', 'Finland'));
+
+3
+const makeUser = (firstName, lastName, birthYear) => {
+    let currentYear = new Date().getFullYear()
+    let age = currentYear - birthYear
+    let user = {
+        firstname: firstName, lastname: lastName, age: age,
+        greeting: function () {
+            return `Hello, ${this.firstname} ${this.lastname}!`
+        }
+    }
+    return user
+}
+
+const user1 = makeUser('Aziz', 'Uskembaev', 2007);
+console.log(user1.firstname);
+console.log(user1.lastname);
+console.log(user1.age);
+console.log(user1.greeting());
+
+4
+function getAges(users) {
+    let currentYear = new Date().getFullYear();
+    return users.map(user2 => currentYear - user2.yearOfBirth);
+}
+let users = [{ name: "Jack", yearOfBirth: 2000 }, { name: "Jack", yearOfBirth: 2000 }, { name: "Alice", yearOfBirth: 2003 }, { name: "Bob", yearOfBirth: 2005 }]
+console.log(getAges(users));
+
+5.1
+function getTotalPopulation(arr) {
+    let sum = 0
+    arr.forEach(city => sum += city.population);
+    return sum
+}
+
+5.2
+function getTotalPopulation(arr) {
+    return arr.reduce((acc, curr) => { return acc += curr.population }, 0);
+}
+let cities = [{ CityName: "Astana", population: 1200 }, { CityName: "Almaty", population: 2200 }, { CityName: "Shymkent", population: 1100 }]
+console.log(getTotalPopulation(cities));
+
+6
+function getHighGrades(arr) {
+    return arr.filter(student => student.score >= 50)
+}
+const studentScores = [{ id: 14, name: "John", score: 50 }, { id: 7, name: "Peter", score: 70 }, { id: 23, name: "Mary", score: 30 }]
+console.log(getHighGrades(studentScores))
+
+7
+function getStudentState(arr, id) {
+    let userId = arr.find(user => user.id === id);
+    if (userId) {
+        const averageScore = arr.reduce((acc, curr) => acc + curr.score, 0) / arr.length;
+        const diffScore = userId.score - averageScore;
+        return { name: userId.name, score: userId.score, difference: diffScore };
+    } else {
+        return 'ID not found';
     }
 }
-let word = ''
-let maxLen = 0
-console.log(iaArr);
-for (let a of iaArr) {
-    if (a.length > maxLen) {
-        maxLen = a.length
-        word = a
-    }
-}
-console.log(word);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// const studentScores = [{ id: 14, name: "John", score: 50 }, { id: 7, name: "Peter", score: 70 }, { id: 23, name: "Mary", score: 30 }]
+console.log(getStudentState(studentScores, 23)) // {name: "Peter", score: 70, difference: -20};
 
 
 

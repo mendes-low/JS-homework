@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* main_container */
+.main_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+}
+/* ----------------------------- */
+/* main_cards */
+.main_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+/* ----------------------------- */
+/* main_img */
+.main_img {
+    width: 430px;
+    height: 340px;
+}
+.main_img img {
+    width: 100%;
+    height: 100%;
+}
+/* ---------------------------- */
+/* main_texts */
+.main_texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.main_texts h2 {
+    color: hsl(0, 0%, 75%);
+}
+/* ----------------------------- */
+/* ----------------------------- */
+
+/* men_container */
+.men_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1500px;
+}
+/* ----------------------------- */
+/* men_cards */
+.men_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 15px;
+}
+/* ----------------------------- */
+/* men_card */
+.men_card {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+/* ------------------------------ */
+/* men_img */
+.men_img {
+    width: 350px;
+    height: 500px;
+}
+.men_img img {
+    width: 100%;
+    height: 100%;
+}
+/* ------------------------------ */
+/* men_price */
+.men_price {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.current_price {
+    color: #f93c00;
+    font-size: 25px;
+}
+
+.men_old_price {
+    text-decoration: line-through;
+    font-size: 20px;
+}
+
+.current_default_price {
+    font: 20px;
+    color: black;
+}
+/* ------------------------------ */
+
+/* men_texts */
+.men_texts {
+    font-family: 'Gill Sans', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* ------------------------------ */

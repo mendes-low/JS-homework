@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamoda/Card</title>
+    <link rel="stylesheet" href="./card.css">
+</head>
+
+<body>
+    <section class="card_container">
+        <div class="card">
+            <div class="card_img">
+                <img id="card_image" src="https://a.lmcdn.ru/img236x341/M/P/MP002XM0V7IF_20626479_1_v1_2x.jpg">
+            </div>
+
+            <div class="card_description">
+                <div class="card_texts">
+                    <h1>Vivaldi</h1>
+                    <h2>Пальто</h2>
+                </div>
+
+                <div class="card_price">
+                    <h1 class="card_old_price">119900</h1>
+                    <h1 class="card_current_price">49900 ₸</h1>
+                </div>
+
+                <div class="card_select_size">
+                    <select id="select_size">
+                        <option>Выберите размер</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                    </select>
+                </div>
+
+                <div class="card_button">
+                    <button id="button">Добавить в корзину</button>
+                </div>
+
+                <div class="delivery_details">
+                    <ion-icon name="car-outline"></ion-icon>
+                    <h2>Подробнее о доставке в ваш город</h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="./card.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
